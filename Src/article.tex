@@ -1,0 +1,75 @@
+%%%%%%%%%%%%
+%PAGE SETUP%
+%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage[margin=1.0in]{geometry}
+
+
+%%%%%%%%%
+%IMPORTS%
+%%%%%%%%%
+
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[pdftex]{hyperref}
+\usepackage{enumitem}
+\usepackage{listings}
+
+\usepackage{graphicx}
+\graphicspath{{./Images/}}
+
+\usepackage[T1]{fontenc}
+
+%%%%%%
+%MISC%
+%%%%%%
+\newcommand{\myLink}[2]{\href{#1}{\color{blue}\underline{\smash{\texttt{#2}}}}}
+\newcommand{\myURL}[1]{\myLink{https://#1}{#1}}
+
+\title{\LaTeX template}
+\author{Author}
+\date{2...-..-..}
+
+
+%%%%%%%
+%BEGIN%
+%%%%%%%
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+%\begin{figure}[h]
+%  \centering
+%  \includegraphics[scale=.5]{loadcellwiring}
+%  \caption{Image obtained from
+%    \myLink{https://www.banggood.com/4pcs-DIY-50KG-Body-Load-Cell-Weight-Strain-Sensor-Resistance-With-HX711-AD-Module-p-1326815.html}{Bang
+%      Good}}
+%  \label{img:banggood}
+%\end{figure}
+
+
+%\newpage
+%\appendix
+%
+%\section{Proposal}
+%
+%This is the original proposal that we submitted:
+%
+%\begin{quote}
+%  \input {proposal.txt}
+%\end{quote}
+%
+%\section{Source Code}
+%\label{apx:code}
+%
+%The code for our project is available on
+%\myLink{https://github.com/SohamKaranjikar/WeightScaleProject}{GitHub} and on
+%\myLink{https://gitlab.engr.illinois.edu/cs-431-spring-2020/4crprojects/itj2\_sohammk2}{GitLab}. For
+%convenience, we have reproduced the code below.
+%
+%\lstinputlisting[language=C]{../../BathroomScale/BathroomScale.ino}
+
+
+\end{document}

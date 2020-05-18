@@ -9,3 +9,4 @@ cd "$(dirname "$0")"
 DIR_OUT="./Out"
 mkdir -p "$DIR_OUT"
 pdflatex --output-directory="$DIR_OUT" ./Src/article.tex
+pdflatex --output-directory="$DIR_OUT" ./Src/presentation.tex

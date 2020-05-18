@@ -1,0 +1,115 @@
+%%%%%%%%%%%%
+%PAGE SETUP%
+%%%%%%%%%%%%
+\documentclass{beamer}
+
+
+%%%%%%%%%
+%IMPORTS%
+%%%%%%%%%
+\usepackage{graphicx}
+\graphicspath{{./Images/}}
+
+%\usepackage{mwe} % for placeholder images
+
+%%%%%%
+%MISC%
+%%%%%%
+\title{\LaTeX template presentation}
+\author{Author}
+\date{2...-..-..}
+
+\newcommand{\myLink}[2]{\href{#1}{\color{blue}\underline{\smash{\texttt{#2}}}}}
+\newcommand{\myURL}[1]{\myLink{https://#1}{#1}}
+
+\newcommand{\obfuscator}{\mathcal{O}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\Nat}{\mathcal{N}}
+\newcommand{\Support}{\text{Supp}}
+\newcommand{\poly}{\text{poly}}
+\newcommand{\bits}{\{0,1\}}
+\newcommand{\comment}{}
+\newcommand{\inputsize}[1]{\text{input}(#1)}
+\usetheme{Berlin}
+% For section 3.1
+\newcommand{\Cab}{C_{\alpha,\beta}}
+\newcommand{\Dab}{D_{\alpha,\beta}}
+\newcommand{\Fab}{F_{\alpha,\beta}}
+\newcommand{\Gab}{G_{\alpha,\beta}}
+
+\newcommand{\encode}{\text{Enc}_K}
+\newcommand{\decode}{\text{Dec}_K}
+\newcommand{\homoencode}{\text{Hom}_K}
+\newcommand{\negligible}{\text{neg}}
+
+%%%%%%%
+%BEGIN%
+%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+%\begin{frame}{Table of Contents}
+%    \tableofcontents
+%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\section{Background}
+\begin{frame}{Introduction}
+    \begin{itemize}
+        \item{Obfuscation is the creation of a ``virtual black box''}
+        \item<2->{Obfuscation might be easy}
+        \begin{itemize}
+            \item<3->Many languages are already hard to reverse engineer
+            \item<4-> Halting Problem is provably impossible
+            \item<5-> Rice’s Theorem
+        \end{itemize}
+        \item<6-> True obfuscation is impossible
+    \end{itemize}
+
+    \centering
+    \includegraphics[width=\textwidth]{example-image}
+\end{frame}
+
+\begin{frame}{Applications of Obfuscation}
+    %NOTE: this is just to demonstrate what can be done with beamer; it's
+    %actually a terrible way of doing things because using "only" with different
+    %sized things (and without anything at all on <4>) makes the bullets move
+    %between slides
+    \begin{itemize}
+    \item<1-> Asymmetric encryption using symmetric algorithms
+    \item<4-> Weakening algorithms / Anti-piracy
+    \item<5-> Software watermarking
+    \end{itemize}
+
+    \only<1>{\includegraphics[width=\textwidth]{example-image-a}}
+    \only<2>{\includegraphics[width=\textwidth]{example-image-b}}
+    \only<3>{\includegraphics[width=\textwidth]{example-image-c}}
+    \only<5>{\includegraphics[width=\textwidth]{example-image-golden}}
+\end{frame}
+
+\section{Section 2}
+\begin{frame}{asdf}
+    \begin{itemize}
+        \item{Obfuscation is the creation of a ``virtual black box''}
+        \item<2->{Obfuscation might be easy}
+        \begin{itemize}
+            \item<3->Many languages are already hard to reverse engineer
+            \item<4-> Halting Problem is provably impossible
+            \item<5-> Rice’s Theorem
+        \end{itemize}
+        \item<6-> True obfuscation is impossible
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Prior Work}
+\begin{itemize}
+    \item Heuristic algorithms for obfuscations and watermarking are common
+    \item Theoretical study of hardware based software protection by Goldreich and Ostrovsky
+    \item Hada considered the theoretical consequences of obfuscators
+    \item Canetti demonstrated by example that function definition can be more useful than just an oracle
+\end{itemize}
+\end{frame}
+
+\end{document}
